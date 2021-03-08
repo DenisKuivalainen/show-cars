@@ -1,9 +1,8 @@
-import tabs from '../src/tabs'
+import { tabs } from "../src/tabs"
 import carsData from "../locations.json";
-import parseJson from '../src/parseJson';
-import table from '../src/table';
-import filtration from '../src/filtration';
-import map from '../src/map';
+import { parseJson } from "../src/parseJson";
+import { filtration } from "../src/filtration";
+import { map } from "../src/map";
 
 export default ({placemarks}) => {
 

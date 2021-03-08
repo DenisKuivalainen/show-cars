@@ -1,7 +1,7 @@
 import { FormControl, Input, InputLabel, MenuItem, Select } from "@material-ui/core";
 import { compose, curry, keys, lensProp, set, uniqBy, __, map, view, toPairs, join, filter, reduce, test, length } from "ramda";
 import { useState } from "react";
-import table from "./table";
+import { table } from "./table";
 
 const option = val => <MenuItem key={val} value={val}>{val}</MenuItem>
 
@@ -24,7 +24,7 @@ const filterSelect = curry((title, options, value, changeValue, multiple = false
 const viewOnProp = prop => view(lensProp(prop));
 const getUnicValues = prop => compose(map(viewOnProp(prop)), uniqBy(viewOnProp(prop)));
 
-export default (data) => {
+export const filtration = (data) => {
     const [fuel, setFuel] = useState("any");
     const [filterParams, setFilterParams] = useState({interior: [], exterior: [], engineType: []});
 

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { AppBar, Tabs, Tab } from '@material-ui/core';
+import { AppBar, Tabs, Tab } from "@material-ui/core";
 import { compose, length, slice } from "ramda";
 import { mapIndexed } from "ramda-godlike";
 
@@ -32,7 +32,7 @@ const panelTabs = (value, handleChange) => children => (
 
 
 
-export default (labels, content) => {
+export const tabs = (labels, content) => {
     const [value, setValue] = useState(0);
 
     const handleValueChange = (e, newValue) => setValue(newValue);
