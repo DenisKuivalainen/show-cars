@@ -1,6 +1,6 @@
 # Storage items - interview task
 
-This project is an Assignment for Developer in Reactoron.
+This project is an Assignment for Developer in Reactron.
 >Display all the cars information in a list. And apply filter to sort them
 >Display all the cars in the map (plus the user's updated location). 
 
